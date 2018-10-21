@@ -16,7 +16,7 @@ function nameToAttributes(arr) {
   const newArr = arr.map(x => x.split(' '));
   for  (const element of newArr){
     
-    obj.firstname=element[0];
+    obj.firstName=element[0];
     obj.lastName=element[1];
     
     result.push(Object.assign({},obj));
