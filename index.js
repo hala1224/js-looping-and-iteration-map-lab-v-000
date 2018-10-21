@@ -28,11 +28,15 @@ function nameToAttributes(arr) {
 
 
 function attributesToPhrase(obj) {
-  
-      for (const key in obj) {
-        console.log('')
+  const final=[];
+
+  const result=obj.map(x => Object.values(x));
+
+      for (const element in result) {
+         final.push(result[element][0] +' is from ' + 
+         result[element][1]);
       }
   
    
-  
+  return final;
 }
