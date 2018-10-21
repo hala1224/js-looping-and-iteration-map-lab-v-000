@@ -13,7 +13,7 @@ function nameToAttributes(arr) {
   const obj={};
   const result=[];
   
-  const newArr = arr.map(x => x.split(' ')[0]);
+  const newArr = arr.map(x => x.split(' '));
   for  (const element of newArr){
     
     obj.name=element[0];
