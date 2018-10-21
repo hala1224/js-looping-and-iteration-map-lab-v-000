@@ -11,6 +11,7 @@ function lowerCaseDrivers(arr) {
 function nameToAttributes(arr) {
 
   const obj={};
+  result=[];
   
   const newArr = arr.map(x => x.split(' ')[0]);
   for  (const element of newArr){
